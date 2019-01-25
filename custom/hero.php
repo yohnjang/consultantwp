@@ -5,7 +5,7 @@
         echo '">';
     }
     else {
-        echo '<div id="static_hero" style="background-image:url(http://placehold.it/1024x768);"></div>">';
+        echo '<div id="static_hero" style="background-image:url('. get_template_directory_uri() .'/src/stock/hero-default.jpg);">';
     }
         echo '<div class="content">';
         echo '<div class="text">';

@@ -1,5 +1,5 @@
 <?php 
-if( get_theme_mod('sparkle_cta_switch') == 1 ){
+if( get_theme_mod('sparkle_cta_switch') == 1 || get_theme_mod('sparkle_cta_switch') == null ){
 
 echo '<div id="cta">
 	<div class="container">

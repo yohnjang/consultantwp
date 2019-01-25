@@ -1,4 +1,4 @@
-<?php if( get_theme_mod('sparkle_consultation_form_section_switch') != 0){
+<?php if( get_theme_mod('sparkle_consultation_form_section_switch') == 1 || get_theme_mod('sparkle_consultation_form_section_switch') == null ){
 	echo '<div id="consultation">
 	<div class="container">
 		<div class="row">
@@ -18,8 +18,6 @@
 				bloginfo( 'name' );
 				echo '</a></div>';
 			}
-
-
 
 			if(get_theme_mod('sparkle_consultation_headline') != null){
 				echo '<div class="display-2">';

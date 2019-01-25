@@ -1,5 +1,5 @@
 
-<?php if(get_theme_mod('sparkle_footer_section_switch') == 1){
+<?php if(get_theme_mod('sparkle_footer_section_switch') == 1 || get_theme_mod('sparkle_footer_section_switch') == null ){
  echo '
 	<footer id="main">
 		<div class="container">
