@@ -24,7 +24,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 </script>
 
 <script>
-	document.getElementById('copyright_date').innerHTML = 'Made with &#9829; by <a href="#">Sparkle Sauce';
+	document.getElementById('copyright_date').innerHTML = '<a href="https://www.johnyang.co">WordPress Design &amp; Development by JY</a>';
 	</script>
 </body>
 

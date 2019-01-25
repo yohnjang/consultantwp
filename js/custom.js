@@ -13,5 +13,5 @@ document.onload = function() { let currentYear = new Date().getFullYear();
   el.innerHTML = currentYear;
 }
 
-  document.onload = function() {document.getElementById('ss').innerHTML = 'Made with &#9829; by <a href="#">Sparkle Sauce';
+  document.onload = function() {document.getElementById('copyright_date').innerHTML = 'Made with &#9829; by <a href="#">Sparkle Sauce</a>';
 }
