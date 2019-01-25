@@ -1,0 +1,16 @@
+#consultation_form {
+  
+    div.wpforms-container-full .wpforms-form input.wpforms-field-medium, div.wpforms-container-full .wpforms-form select.wpforms-field-medium, div.wpforms-container-full .wpforms-form .wpforms-field-row.wpforms-field-medium {
+    max-width: 96%;
+  }
+
+  button {
+    width: 50%;
+    padding: .5rem 1rem;
+    font-size: 1.2rem;
+    border-radius: .25rem;
+    border: 1px solid transparent;
+  }
+
+
+}

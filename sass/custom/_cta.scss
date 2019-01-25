@@ -1,0 +1,42 @@
+#cta { 
+  padding:2rem 0;
+  .container { 
+    a { 
+      display:block;
+      border:1px solid transparent;
+      text-align:center;
+      padding:1rem 2rem;
+      font-size:1.2rem;
+      margin-top:2rem;
+    }
+  }
+}
+
+@media only screen and (min-width:768px){
+
+  #cta { 
+    
+    .container { 
+      display:flex;
+    align-content: center;
+    align-items:center;
+    justify-content: center;
+    flex-flow:row;
+    a { display:inline-block;width:340px;margin-top:0;}
+    }
+
+  }
+}
+
+@media only screen and (min-width:1024px){
+
+  #cta { 
+    .container {
+      display: flex;
+      align-content: center;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+  }
+}

@@ -1,0 +1,80 @@
+
+ #consultation { 
+  padding:1rem 0;
+   .display-2{ 
+     margin:1rem 0;
+   }
+   i { margin-right:1rem;font-size:2rem;}
+
+   .logo { 
+
+
+    &.top{ margin: 1rem 0;
+    
+      img { width: 200px; }
+    }
+
+    &.bottom{ margin-top: 2rem;
+    
+      img { width: 300px; }
+    }
+   }
+
+   div.wpcf7{
+     width:100%;
+   }
+
+   .headline { 
+     text-align:center;
+   }
+
+  input[type="text"],
+  input[type="email"],
+  textarea { 
+    border:1px solid transparent;
+    width:100%;
+    border-radius:.25rem;
+    font-size:1rem;
+    padding:.7rem 1.4rem;
+  }
+  input[type="submit"]{
+    color:#fff;
+    border:1px solid transparent;
+    border-radius:.25rem;
+    width:100%;
+    padding:.75rem 1.5rem;
+    font-size:1.5rem;
+  }
+
+  #consultation_form { 
+    display:flex;
+    justify-content:center;
+    label { 
+      font-size:.9rem;
+      width:100%;
+    }
+    button { width: 100%;}
+  }
+ }
+
+
+ @media only screen and (min-width:768px){
+
+  #consultation { 
+
+   .headline { 
+    text-align:center;
+  }
+  }
+}
+
+@media only screen and (min-width:1024px){
+
+  #consultation { 
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    align-content: center;
+
+  }
+}

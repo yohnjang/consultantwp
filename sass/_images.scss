@@ -1,0 +1,43 @@
+#featured,#news,#featured_glider,#news_glider {
+    .featured_image { 
+      height:200px;
+      background-size:cover;
+    }
+  }
+
+  #testimonials, #testimonials_glider { 
+    ul li:hover .testimonials_image { 
+      filter: grayscale(0%);
+    }
+  }
+    
+  #featured, #news, #featured_glider, #news_glider {  
+    ul li:hover .featured_image { 
+      filter: grayscale(0%); }
+    }
+
+    #page-wrapper .featured_image:hover , img.wp-post-image:hover , article img:hover, figure:hover, img:hover, #secondary img:hover{ 
+      filter: grayscale(0%); 
+    }
+
+@media only screen and (min-width:768px){
+
+  #featured,#news,#featured_glider,#news_glider {
+    .featured_image { 
+      height:400px;
+      border-radius: .25rem;
+    }
+  }
+}
+
+@media only screen and (min-width:1024px){
+  
+  #featured,#news,#featured_glider,#news_glider{ 
+    .featured_image { 
+      height:240px;
+      transition: filter 0.1s linear;
+    }
+  }
+
+}
+

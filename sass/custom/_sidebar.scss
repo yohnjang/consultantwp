@@ -1,0 +1,20 @@
+#sidebar { 
+  padding-top:4rem;
+
+  .widget { 
+    margin-bottom:2rem;
+
+    &.widget_search{
+      height:50px;
+      form{
+        input[type="text"]{
+          width:70%;
+          float:left;
+          margin-right:1rem;
+        }
+        span.input-group-append{ float:left;width:20%;}
+      }
+    }
+  }
+}
+

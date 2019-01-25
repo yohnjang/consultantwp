@@ -1,0 +1,27 @@
+#topbar{ 
+  padding:.5rem;
+  a { 
+    text-decoration: none;
+    margin-right:.5rem;
+  }
+  .container { 
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    align-content:center;
+
+
+    .contact {
+      span {margin-right:1rem;}
+      #{$flonts}{
+        font-size:1rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width:768px){
+}
+
+@media only screen and (min-width:1024px){
+}
