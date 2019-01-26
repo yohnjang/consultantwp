@@ -20,7 +20,7 @@ echo '.light-bg,#consultation, #navbar-wrapper, #newsletter_section { background
 
 echo '.medium-bg,#cta{ background: '. $medium_bg_monochrome . '; }';
 
-echo '.dark-bg,.btn-secondary:hover,#consultation input[type="submit"],#consultation_form button,#footer_copyright,#newsletter_section input[type="submit"], footer#main #footer_newsletter input[type="submit"],#cta a,.cookiebanner { background-color: '. $dark_bg_monochrome . ' !important;}';
+echo '.dark-bg,.btn-secondary:hover,#consultation input[type="submit"],#consultation_form button,#footer_copyright,#newsletter_section input[type="submit"], footer#main #footer_newsletter input[type="submit"],#cta a,.cookiebanner { background-color: '. $dark_bg_monochrome . '}';
 
 echo '.super-dark-bg,#topbar,footer#main { background-color: '. $super_dark_bg_monochrome . ';}';
 

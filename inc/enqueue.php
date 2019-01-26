@@ -38,20 +38,32 @@ function sparkle_front_page_scripts() {
 
 	if( is_front_page() & ( get_theme_mod('sparkle_featured_section_switch') == 2 || get_theme_mod('sparkle_testimonials_section_switch') == 2 || get_theme_mod('sparkle_news_section_switch') == 2 || get_theme_mod('sparkle_featured_section_switch') == null || get_theme_mod('sparkle_testimonials_section_switch') == null || get_theme_mod('sparkle_news_section_switch') == null ) )
 	{
-		wp_enqueue_style( 'sparkle-glide-css', get_template_directory_uri() . '/src/glide/glide.core.css', array(), $css_version );
+		wp_enqueue_style( 'sparkle-glide-css', get_template_directory_uri() . '/src/glide/glide.css', array(), $css_version );
 		wp_enqueue_script( 'sparkle-glide-js', get_template_directory_uri() . '/src/glide/glide.js', array(), $js_version, true );
 		
 		if(get_theme_mod('sparkle_featured_section_switch') == 2 || get_theme_mod('sparkle_featured_section_switch') == null) {
-		wp_enqueue_script( 'sparkle-featured-glide-script', get_template_directory_uri() . '/src/glide/featured-glide.js', array(), $js_version, true );
+		wp_enqueue_script( 'sparkle-featured-glide-script', get_template_directory_uri() . '/src/glide/featured.js', array(), $js_version, true );
 		}
 
 		if(get_theme_mod('sparkle_testimonials_section_switch') == 2 || get_theme_mod('sparkle_testimonials_section_switch') == null) {
-			wp_enqueue_script( 'sparkle-testimonials-glide-script', get_template_directory_uri() . '/src/glide/testimonials-glide.js', array(), $js_version, true );
+			wp_enqueue_script( 'sparkle-testimonials-glide-script', get_template_directory_uri() . '/src/glide/testimonials.js', array(), $js_version, true );
 			}
 
 			if(get_theme_mod('sparkle_news_section_switch') == 2 && get_theme_mod('sparkle_news_section_switch') == null ) {
-				wp_enqueue_script( 'sparkle-news-glide-script', get_template_directory_uri() . '/src/glide/news-glide.js', array(), $js_version, true );
+				wp_enqueue_script( 'sparkle-news-glide-script', get_template_directory_uri() . '/src/glide/news.js', array(), $js_version, true );
 				}
 	}
 }
 add_action( 'wp_enqueue_scripts', 'sparkle_front_page_scripts' );
+
+
+function sparkle_blog_scripts() {
+
+	if( is_home() )
+	{
+		wp_enqueue_style( 'sparkle-bricklayer-css', get_template_directory_uri() . '/src/bricklayer/bricklayer.min.css', array(), $css_version );
+		wp_enqueue_script( 'sparkle-bricklayer-js', get_template_directory_uri() . '/src/bricklayer/bricklayer.min.js', array(), $js_version, true );
+	}
+}
+add_action( 'wp_enqueue_scripts', 'sparkle_blog_scripts' );
+

@@ -18,7 +18,7 @@ $dark_border_color_green = $dark_color;
 
 echo '.light-bg,#consultation, #navbar-wrapper { background-color: ' . $light_bg_green . ';}';
 
-echo '.medium-bg,#cta, footer#main #footer_newsletter input[type="submit"],#newsletter_section input[type="submit"],.cookiebanner{ background: '. $medium_bg_green . ' !important; }';
+echo '.medium-bg,#cta, footer#main #footer_newsletter input[type="submit"],#newsletter_section input[type="submit"],.cookiebanner{ background: '. $medium_bg_green . '; }';
 
 echo '.dark-bg,.btn-secondary:hover,#consultation input[type="submit"],#consultation_form button,#footer_copyright { background-color: '. $dark_bg_green . ';}';
 

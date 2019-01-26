@@ -54,7 +54,7 @@
 
 	// NULL
 	if( get_theme_mod('sparkle_theme_color') == null ) {
-		get_template_part('inc/settings/colors/red');
+		get_template_part('inc/settings/colors/purple');
 	}
 
 	echo '</style>';
