@@ -49,6 +49,13 @@ footer#main {
 text-align: center;
 }
 
+.cookiebanner > span { 
+  font-size: 1rem !important;
+  line-height: 1.1rem !important;
+  font-family: 'Open Sans', sans-serif !important;
+  color: #111 !important;
+}
+
 @media only screen and (min-width:768px){
 
   #footer_copyright { 

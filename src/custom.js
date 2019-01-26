@@ -8,10 +8,11 @@ function showMobileMenu() {
 
 }
 
-document.onload = function() { let currentYear = new Date().getFullYear();
-  let el = document.querySelector(".year");
+window.onload = function() { 
+  let currentYear = new Date().getFullYear();
+  console.log(currentYear);
+  console.log('hello');
+  let el = document.querySelector('.year');
   el.innerHTML = currentYear;
 }
 
-  document.onload = function() {document.getElementById('copyright_date').innerHTML = 'Made with &#9829; by <a href="#">Sparkle Sauce</a>';
-}

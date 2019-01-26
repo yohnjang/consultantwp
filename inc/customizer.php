@@ -51,6 +51,7 @@ if ( ! function_exists( 'sparkle_theme_customize_register' ) ) {
 			'/social-media.php',
 			'/theme-color.php',
 			'/typography.php',
+			'/custom-content-switch.php',
 			'/blog.php',
 		);
 		

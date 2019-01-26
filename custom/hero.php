@@ -77,4 +77,6 @@
     var typed = new Typed("#typed", options);
 </script>
 
-<?php } ?>
+<?php } 
+
+?>

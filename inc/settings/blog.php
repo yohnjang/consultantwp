@@ -4,7 +4,7 @@
 			'title'       => __( 'Blog', 'sparkle' ),
 			'capability'  => 'edit_theme_options',
 			'description' => __( 'Blog Settings', 'sparkle' ),
-			'priority'    => 85,
+			'priority'    => 90,
 		) );
 
     $wp_customize->add_setting( 'sparkle_blog_sidebar_switch', array(

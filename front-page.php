@@ -10,23 +10,45 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-get_header(); ?>
+get_header();
 
-<?php get_template_part( 'custom/hero' ); ?>
+ get_template_part( 'custom/hero' ); 
 
-<?php get_template_part( 'custom/cta' ); ?>
+ get_template_part( 'custom/cta' ); 
 
-<?php get_template_part( 'custom/featured' ); ?>
+ if( get_theme_mod('sparkle_custom_content_switch') == 1 ){
+	get_template_part( 'custom/custom-content' ); 
+	}
 
-<?php get_template_part( 'custom/newsletter' ); ?>
+ get_template_part( 'custom/featured' ); 
 
-<?php get_template_part( 'custom/testimonials'); ?>
+ if( get_theme_mod('sparkle_custom_content_switch') == 2 ){
+	get_template_part( 'custom/custom-content' ); 
+	}
 
-<?php get_template_part( 'custom/consultation' ); ?>
+ get_template_part( 'custom/newsletter' ); 
 
-<?php get_template_part( 'custom/news' ); ?>
+ if( get_theme_mod('sparkle_custom_content_switch') == 3 ){
+	get_template_part( 'custom/custom-content' ); 
+	}
 
-<?php get_template_part( 'custom/gliders' ); ?>
+ get_template_part( 'custom/testimonials'); 
 
-<?php get_footer(); ?>
+ if( get_theme_mod('sparkle_custom_content_switch') == 4 ){
+	get_template_part( 'custom/custom-content' ); 
+	}
+
+ get_template_part( 'custom/consultation' ); 
+
+ if( get_theme_mod('sparkle_custom_content_switch') == 5 ){
+	get_template_part( 'custom/custom-content' ); 
+	}
+
+ get_template_part( 'custom/news' ); 
+
+ if( get_theme_mod('sparkle_custom_content_switch') == 6 ){
+	get_template_part( 'custom/custom-content' ); 
+	}
+
+ get_footer(); 
 

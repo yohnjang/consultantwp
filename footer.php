@@ -17,16 +17,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <?php wp_footer(); ?>
 
-<script type="text/javascript">
-  let currentYear = new Date().getFullYear();
-  let el = document.querySelector(".year");
-  el.innerHTML = currentYear;
-</script>
-
-<script>
-	document.getElementById('copyright_date').innerHTML = '<a href="https://www.johnyang.co">WordPress Design &amp; Development by JY</a>';
-	</script>
 </body>
-
 </html>
 

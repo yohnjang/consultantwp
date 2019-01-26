@@ -14,3 +14,6 @@
     </div><div id="copyright_date"></div>
 	</div><!-- container -->
 </div><!-- #footer_copyright-->
+
+<script type="text/javascript" id="cookiebanner"
+  src="<?php echo get_template_directory_uri() ?>/src/cookiebanner.js"></script>

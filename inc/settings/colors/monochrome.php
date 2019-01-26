@@ -20,7 +20,7 @@ echo '.light-bg,#consultation, #navbar-wrapper, #newsletter_section { background
 
 echo '.medium-bg,#cta{ background: '. $medium_bg_monochrome . '; }';
 
-echo '.dark-bg,.btn-secondary:hover,#consultation input[type="submit"],#consultation_form button,#footer_copyright,#newsletter_section input[type="submit"], footer#main #footer_newsletter input[type="submit"],#cta a { background-color: '. $dark_bg_monochrome . ';}';
+echo '.dark-bg,.btn-secondary:hover,#consultation input[type="submit"],#consultation_form button,#footer_copyright,#newsletter_section input[type="submit"], footer#main #footer_newsletter input[type="submit"],#cta a,.cookiebanner { background-color: '. $dark_bg_monochrome . ' !important;}';
 
 echo '.super-dark-bg,#topbar,footer#main { background-color: '. $super_dark_bg_monochrome . ';}';
 
@@ -39,34 +39,34 @@ echo '.dark-border-color,.btn-secondary,#consultation input[type="email"],#consu
 if( get_theme_mod('sparkle_hero_gradient_percent_mobile') != null){
 	echo '#static_hero:before { background: linear-gradient(90deg, '. $super_dark_bg_monochrome .' 0%, '. $super_dark_bg_monochrome .' ';
 		echo get_theme_mod('sparkle_hero_gradient_percent_mobile');
-		echo '%, rgba(0, 255,255,0) 100%);}';
+		echo '%, transparent 100%);}';
 }
 else { 
-	echo '#static_hero:before { background: '. $super_dark_bg_monochrome .';background: linear-gradient(90deg, '. $super_dark_bg_monochrome .' 0%, #263242 50%, rgba(0, 255,255,0) 100%);}';
+	echo '#static_hero:before { background: '. $super_dark_bg_monochrome .';background: linear-gradient(90deg, '. $super_dark_bg_monochrome .' 0%, '. $super_dark_bg_monochrome .' 50%, transparent 100%);}';
 }
 
 if( get_theme_mod('sparkle_hero_gradient_percent_tablet') != null){
 	echo '@media only screen and (min-width:768px){ #static_hero:before {
 	background: linear-gradient(90deg, '. $super_dark_bg_monochrome .' 0%, '. $super_dark_bg_monochrome .' ';
 			echo get_theme_mod('sparkle_hero_gradient_percent_tablet');
-			echo '%, rgba(0, 255,255,0) 100%);
+			echo '%, transparent 100%);
 		}
 	}';
 }
 else { 
-	echo '@media only screen and (min-width:768px){ #static_hero:before {background: '. $super_dark_bg_monochrome .';background: linear-gradient(90deg, '. $super_dark_bg_monochrome .' 0%, '. $super_dark_bg_monochrome .' 50%, rgba(0, 255,255,0) 100%);}}';
+	echo '@media only screen and (min-width:768px){ #static_hero:before {background: '. $super_dark_bg_monochrome .';background: linear-gradient(90deg, '. $super_dark_bg_monochrome .' 0%, '. $super_dark_bg_monochrome .' 50%, transparent 100%);}}';
 }
 
 if( get_theme_mod('sparkle_hero_gradient_percent_desktop') != null){
 	echo '@media only screen and (min-width:1024px){ #static_hero:after {
 		background: linear-gradient(90deg, '. $super_dark_bg_monochrome .' 0%, '. $super_dark_bg_monochrome .' ';
 			echo get_theme_mod('sparkle_hero_gradient_percent_desktop');
-			echo '%, rgba(0, 255,255,0) 100%);
+			echo '%, transparent 100%);
 		}
 	}';
 }
 else { 
-	echo '@media only screen and (min-width:1024px){ #static_hero:before { background: '. $super_dark_bg_monochrome .';background: linear-gradient(90deg, '. $super_dark_bg_monochrome .' 0%, '. $super_dark_bg_monochrome .' 20%, rgba(0, 255,255,0) 100%);}}';
+	echo '@media only screen and (min-width:1024px){ #static_hero:before { background: '. $super_dark_bg_monochrome .';background: linear-gradient(90deg, '. $super_dark_bg_monochrome .' 0%, '. $super_dark_bg_monochrome .' 20%, transparent 100%);}}';
 }
 
 if( get_theme_mod('sparkle_typography_mode_switch') == 1 ){
@@ -76,10 +76,10 @@ if( get_theme_mod('sparkle_typography_mode_switch') == 1 ){
 	#static_hero .content .text {position: relative;z-index: 101;bottom: 0;padding: 0;}
 	#static_hero .content { height: auto;}
 	
-	#static_hero:before { background:'. $super_dark_bg_monochrome .';background: linear-gradient(90deg, '. $super_dark_bg_monochrome .' 0%, '. $super_dark_bg_monochrome .' 100%, rgba(0, 255,255,0) 100%);opacity:1;}
+	#static_hero:before { background:'. $super_dark_bg_monochrome .';background: linear-gradient(90deg, '. $super_dark_bg_monochrome .' 0%, '. $super_dark_bg_monochrome .' 100%, transparent 100%);opacity:1;}
 
-	@media only screen and (min-width:768px){ #static_hero:before {background: '. $super_dark_bg_monochrome .';background: linear-gradient(90deg, '. $super_dark_bg_monochrome .' 0%, '. $super_dark_bg_monochrome .' 100%, rgba(0, 255,255,0) 100%);opacity:1;}}
+	@media only screen and (min-width:768px){ #static_hero:before {background: '. $super_dark_bg_monochrome .';background: linear-gradient(90deg, '. $super_dark_bg_monochrome .' 0%, '. $super_dark_bg_monochrome .' 100%, transparent 100%);opacity:1;}}
 
-	@media only screen and (min-width:1024px){ #static_hero:before { background: '. $super_dark_bg_monochrome .';background: linear-gradient(90deg, '. $super_dark_bg_monochrome .' 0%, '. $super_dark_bg_monochrome .' 100%, rgba(0, 255,255,0) 100%);opacity:1;}}';
+	@media only screen and (min-width:1024px){ #static_hero:before { background: '. $super_dark_bg_monochrome .';background: linear-gradient(90deg, '. $super_dark_bg_monochrome .' 0%, '. $super_dark_bg_monochrome .' 100%, transparent 100%);opacity:1;}}';
 }
 ?>

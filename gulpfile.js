@@ -7,6 +7,8 @@ var autoprefixer = require('gulp-autoprefixer');
 var sourcemaps = require('gulp-sourcemaps');
 var minify = require('gulp-minify');
 var browserSync = require('browser-sync'); 
+var concat = require('gulp-concat');
+var uglify = require ('gulp-uglify');
 
 // configure the paths
 var watch_dir = './sass/**/*.scss';
@@ -19,8 +21,9 @@ var paths = {
 
 gulp.task('compress', function() {
   gulp.src(['js/*.js', 'js/*.mjs'])
-    .pipe(minify())
-    .pipe(gulp.dest('src'))
+  //.pipe(concat('theme.js'))
+  .pipe(minify())
+  .pipe(gulp.dest('./src'))
 });
 
 gulp.task('watch', function() {

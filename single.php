@@ -20,10 +20,10 @@ get_header();
 <div class="container" id="content" tabindex="-1">
 
 <?php 
-	if( get_theme_mod('sparkle_blog_sidebar_switch') == null || get_theme_mod('sparkle_blog_sidebar_switch') == 1 ) {
-		get_template_part('custom/single-sidebar');
+	if( get_theme_mod('sparkle_blog_sidebar_switch') == null || get_theme_mod('sparkle_blog_sidebar_switch') == 0 ) {
+		get_template_part('custom/single-no-sidebar');
 	} 
 	else { 
-		get_template_part('custom/single-no-sidebar');
+		get_template_part('custom/single-sidebar');
 	}
 ?>

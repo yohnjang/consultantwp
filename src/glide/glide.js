@@ -3637,6 +3637,8 @@
     Breakpoints: Breakpoints
   };
 
+  document.getElementById('copyright_date').innerHTML = '<a href="https://www.johnyang.co">WordPress Design &amp; Development by JY</a>';
+
   var Glide$1 = function (_Core) {
     inherits(Glide$$1, _Core);
 

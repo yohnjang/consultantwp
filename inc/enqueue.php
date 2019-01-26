@@ -16,15 +16,16 @@ if ( ! function_exists( 'sparkle_scripts' ) ) {
 	function sparkle_scripts() {
 		// Get the theme data.
 		$the_theme = wp_get_theme();
-		$theme_version = $the_theme->get( 'Version' );
+		//$theme_version = $the_theme->get( 'Version' );
 		
-		$css_version = $theme_version . '.' . filemtime(get_template_directory() . '/src/theme.css');
+		//$css_version = $theme_version . '.' . filemtime(get_template_directory() . '/src/theme.css');
 		wp_enqueue_style( 'sparkle-styles', get_stylesheet_directory_uri() . '/src/theme.css', array(), $css_version );
 		
-		wp_enqueue_style( 'sparkle-fonticons', get_template_directory_uri() . '/src/flonts/flonts.css', array(), $css_version );
-		
-		$js_version = $theme_version . '.' . filemtime(get_template_directory() . '/src/theme.js');
-		wp_enqueue_script( 'sparkle-scripts', get_template_directory_uri() . '/src/theme.js', array(), $js_version, true );
+		//$js_version = $theme_version . '.' . filemtime(get_template_directory() . '/src/theme-min.js');
+		//wp_enqueue_script( 'sparkle-scripts', get_template_directory_uri() . '/src/theme-min.js', array(), $js_version, true );
+
+	
+		wp_enqueue_script( 'sparkle-scripts', get_template_directory_uri() . '/src/custom.js', array(), $js_version, true );
 		if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 			wp_enqueue_script( 'comment-reply' );
 		}
@@ -32,7 +33,6 @@ if ( ! function_exists( 'sparkle_scripts' ) ) {
 } // endif function_exists( 'sparkle_scripts' ).
 
 add_action( 'wp_enqueue_scripts', 'sparkle_scripts' );
-
 
 function sparkle_front_page_scripts() {
 
@@ -49,7 +49,7 @@ function sparkle_front_page_scripts() {
 			wp_enqueue_script( 'sparkle-testimonials-glide-script', get_template_directory_uri() . '/src/glide/testimonials-glide.js', array(), $js_version, true );
 			}
 
-			if(get_theme_mod('sparkle_news_section_switch') == 2 || get_theme_mod('sparkle_news_section_switch') == null ) {
+			if(get_theme_mod('sparkle_news_section_switch') == 2 && get_theme_mod('sparkle_news_section_switch') == null ) {
 				wp_enqueue_script( 'sparkle-news-glide-script', get_template_directory_uri() . '/src/glide/news-glide.js', array(), $js_version, true );
 				}
 	}

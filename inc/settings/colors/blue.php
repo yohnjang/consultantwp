@@ -18,7 +18,7 @@
 
 		echo '.light-bg,#consultation, #navbar-wrapper { background-color: ' . $light_bg_blue . ';}';
 		
-		echo '.medium-bg,#cta, footer#main #footer_newsletter input[type="submit"],#newsletter_section input[type="submit"]{ background: '. $medium_bg_blue . '; }';
+		echo '.medium-bg,#cta, footer#main #footer_newsletter input[type="submit"],#newsletter_section input[type="submit"],.cookiebanner{ background: '. $medium_bg_blue . ' !important; }';
 
 		echo '.dark-bg,.btn-secondary:hover,#consultation input[type="submit"],#consultation_form button,#footer_copyright { background-color: '. $dark_bg_blue . ';}';
 
@@ -39,34 +39,34 @@
 		if( get_theme_mod('sparkle_hero_gradient_percent_mobile') != null){
 			echo '#static_hero:before { background: linear-gradient(90deg, '. $super_dark_bg_blue .' 0%, '. $super_dark_bg_blue .' ';
 				echo get_theme_mod('sparkle_hero_gradient_percent_mobile');
-				echo '%, rgba(0, 255,255,0) 100%);}';
+				echo '%, transparent 100%);}';
 		}
 		else { 
-			echo '#static_hero:before { background: '. $super_dark_bg_blue .';background: linear-gradient(90deg, '. $super_dark_bg_blue .' 0%, #263242 50%, rgba(0, 255,255,0) 100%);}';
+			echo '#static_hero:before { background: '. $super_dark_bg_blue .';background: linear-gradient(90deg, '. $super_dark_bg_blue .' 0%, '. $super_dark_bg_blue .' 50%, transparent 100%);}';
 		}
 
 		if( get_theme_mod('sparkle_hero_gradient_percent_tablet') != null){
 			echo '@media only screen and (min-width:768px){ #static_hero:before {
 			background: linear-gradient(90deg, '. $super_dark_bg_blue .' 0%, '. $super_dark_bg_blue .' ';
 					echo get_theme_mod('sparkle_hero_gradient_percent_tablet');
-					echo '%, rgba(0, 255,255,0) 100%);
+					echo '%, transparent 100%);
 				}
 			}';
 		}
 		else { 
-			echo '@media only screen and (min-width:768px){ #static_hero:before {background: '. $super_dark_bg_blue .';background: linear-gradient(90deg, '. $super_dark_bg_blue .' 0%, '. $super_dark_bg_blue .' 50%, rgba(0, 255,255,0) 100%);}}';
+			echo '@media only screen and (min-width:768px){ #static_hero:before {background: '. $super_dark_bg_blue .';background: linear-gradient(90deg, '. $super_dark_bg_blue .' 0%, '. $super_dark_bg_blue .' 50%, transparent 100%);}}';
 		}
 
 		if( get_theme_mod('sparkle_hero_gradient_percent_desktop') != null){
 			echo '@media only screen and (min-width:1024px){ #static_hero:after {
 				background: linear-gradient(90deg, '. $super_dark_bg_blue .' 0%, '. $super_dark_bg_blue .' ';
 					echo get_theme_mod('sparkle_hero_gradient_percent_desktop');
-					echo '%, rgba(0, 255,255,0) 100%);
+					echo '%, transparent 100%);
 				}
 			}';
 		}
 		else { 
-			echo '@media only screen and (min-width:1024px){ #static_hero:before { background: '. $super_dark_bg_blue .';background: linear-gradient(90deg, '. $super_dark_bg_blue .' 0%, '. $super_dark_bg_blue .' 20%, rgba(0, 255,255,0) 100%);}}';
+			echo '@media only screen and (min-width:1024px){ #static_hero:before { background: '. $super_dark_bg_blue .';background: linear-gradient(90deg, '. $super_dark_bg_blue .' 0%, '. $super_dark_bg_blue .' 20%, transparent 100%);}}';
 		}
 
 		if( get_theme_mod('sparkle_typography_mode_switch') == 1 ){
@@ -76,11 +76,11 @@
 			#static_hero .content .text {position: relative;z-index: 101;bottom: 0;padding: 0;}
 			#static_hero .content { height: auto;}
 			
-			#static_hero:before { background:'. $super_dark_bg_blue .';background: linear-gradient(90deg, '. $super_dark_bg_blue .' 0%, '. $super_dark_bg_blue .' 100%, rgba(0, 255,255,0) 100%);opacity:1;}
+			#static_hero:before { background:'. $super_dark_bg_blue .';background: linear-gradient(90deg, '. $super_dark_bg_blue .' 0%, '. $super_dark_bg_blue .' 100%, transparent 100%);opacity:1;}
 
-			@media only screen and (min-width:768px){ #static_hero:before {background: '. $super_dark_bg_blue .';background: linear-gradient(90deg, '. $super_dark_bg_blue .' 0%, '. $super_dark_bg_blue .' 100%, rgba(0, 255,255,0) 100%);opacity:1;}}
+			@media only screen and (min-width:768px){ #static_hero:before {background: '. $super_dark_bg_blue .';background: linear-gradient(90deg, '. $super_dark_bg_blue .' 0%, '. $super_dark_bg_blue .' 100%, transparent 100%);opacity:1;}}
 
-			@media only screen and (min-width:1024px){ #static_hero:before { background: '. $super_dark_bg_blue .';background: linear-gradient(90deg, '. $super_dark_bg_blue .' 0%, '. $super_dark_bg_blue .' 100%, rgba(0, 255,255,0) 100%);opacity:1;}}
+			@media only screen and (min-width:1024px){ #static_hero:before { background: '. $super_dark_bg_blue .';background: linear-gradient(90deg, '. $super_dark_bg_blue .' 0%, '. $super_dark_bg_blue .' 100%, transparent 100%);opacity:1;}}
 			
 			';
 		}
