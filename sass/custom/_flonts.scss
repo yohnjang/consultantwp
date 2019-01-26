@@ -1,3 +1,21 @@
+@font-face {
+  font-family: "flont";
+  src: url("flonts/flonts.eot");
+  src: url("flonts/flonts.eot?#iefix") format("embedded-opentype"),
+       url("flonts/flonts.woff") format("woff"),
+       url("flonts/flonts.ttf") format("truetype"),
+       url("flonts/flonts.svg#flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "flont";
+    src: url("flonts/flonts.svg#flaticon") format("svg");
+  }
+}
+
 .flont-facebook:before { content: "\f100"; }
 .flont-twitter:before { content: "\f101"; }
 .flont-instagram:before { content: "\f102"; }

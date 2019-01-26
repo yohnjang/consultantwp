@@ -16,4 +16,4 @@
 </div><!-- #footer_copyright-->
 
 <script type="text/javascript" id="cookiebanner"
-  src="<?php echo get_template_directory_uri() ?>/src/cookiebanner.js"></script>
+  src="<?php //echo get_template_directory_uri() ?>/src/cookiebanner.js"></script>

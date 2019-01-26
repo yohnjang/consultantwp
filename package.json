@@ -57,5 +57,7 @@
     "run-sequence": "^2.2.1",
     "undescores-for-npm": "^1.0.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "gulp-terser": "^1.1.7"
+  }
 }

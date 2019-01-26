@@ -35,9 +35,7 @@
                         echo '</p>';
                     }
                     else{
-                        echo '<p class="heading hero_excerpt">';
-                        echo 'The hero excerpt will go here.';
-                        echo '</p>';
+
                     }
     echo '</div><!-- text -->
             </div><!-- content -->
