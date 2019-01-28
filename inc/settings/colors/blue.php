@@ -30,7 +30,7 @@
 
 		echo '.light-text, #newsletter_section, #consultation_form button, footer#main p, #footer_copyright, #footer_copyright a, #topbar a,#topbar, #cta,#cta a, footer#main a,footer#main,  #newsletter_section h2, #static_hero #typed, #static_hero h1, #static_hero .display-2,#newsletter_form_text_logo a, #static_hero p.heading, #newsletter_section .display-3, nav#primary .display-3 a, nav#primary li a, #newsletter_section .newsletter_code p { color: '. $light_text_blue . ';}';
 
-		echo '.medium-text, nav#primary ul#primary_menu li:hover a, #topbar .social a:hover, #footer_contact .social a:hover,ul#footer_menu li a:hover , nav#primary #logo .display-3 a:hover, #footer_text_logo a:hover , #footer_copyright a:hover{ color: '. $medium_text_blue . ';}';
+		echo '.medium-text, nav#primary ul#primary_menu li:hover a, #topbar .social a:hover, #footer_contact .social a:hover,ul#footer_menu li a:hover , nav#primary #logo .display-3 a:hover, #footer_text_logo a:hover , #footer_copyright a:hover, #newsletter_form_text_logo a:hover { color: '. $medium_text_blue . ';}';
 
 		echo '.dark-text,#consultation_form label,#footer_newsletter,.display-1,.display-2,.display-3,.display-4,.display-5,.display-6,h1,h2,h3,h4,h5,p, .entry-title a,#newsletter_section input[type="submit"], footer#main #footer_newsletter input[type="submit"], footer#main #footer_newsletter p, #cta a.cta.button:hover{ color: '. $dark_text_blue . ' }';
 
