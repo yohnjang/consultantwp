@@ -25,7 +25,7 @@
                         }
                         else {
                             echo '<h1 class="display-2">';
-                            echo 'This is the headline';
+                            echo 'Your Benefit Driven Headline Or Promise Goes Here';
                             echo '</h1>';
                         }
                     }
@@ -56,7 +56,7 @@
 <?php if(get_theme_mod('sparkle_hero_headline') == null ){ ?>
     <script>
     var optionss = {
-        strings: ["This your empty headline and you will need to fill it out."],
+        strings: ["Your Benefit Driven Headline Or Promise Goes Here"],
         typeSpeed: 70,
         showCursor: false
     }

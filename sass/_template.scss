@@ -36,12 +36,12 @@ input[type="submit"]:hover {cursor: pointer;}
 
   .alignleft {
     float: left;
-    margin-right: 1.5em;
+    margin-right: 1.5em !important;
   }
 
   .alignright {
     float: right;
-    margin-left: 1.5em;
+    margin-left: 1.5em !important;
   }
 
   .aligncenter { @extend .mx-auto; }
