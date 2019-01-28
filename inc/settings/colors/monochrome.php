@@ -16,19 +16,22 @@ $super_dark_text_monochrome = $super_dark_color;
 $light_border_color_monochrome = $light_color;
 $dark_border_color_monochrome = $dark_color;
 
-echo '.light-bg,#consultation, #navbar-wrapper, #newsletter_section { background-color: ' . $light_bg_monochrome . ';}';
+echo '#testimonials::before, #testimonials_glider::before{ color: ' . $medium_color .';}';
+echo '#static_hero { border-top: 1px solid ' . $light_color .';border-bottom: 1px solid ' . $light_color .';}';
+
+echo '.light-bg,#consultation, #newsletter_section, body,#primaryMenuWrapper.show,.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{ background-color: ' . $light_bg_monochrome . ';}';
 
 echo '.medium-bg,#cta{ background: '. $medium_bg_monochrome . '; }';
 
-echo '.dark-bg,.btn-secondary:hover,#consultation input[type="submit"],#consultation_form button,#footer_copyright,#newsletter_section input[type="submit"], footer#main #footer_newsletter input[type="submit"],#cta a,.cookiebanner { background-color: '. $dark_bg_monochrome . '}';
+echo '.dark-bg,.btn-secondary:hover,#consultation input[type="submit"],#consultation_form button,#footer_copyright,#newsletter_section input[type="submit"], footer#main #footer_newsletter input[type="submit"],#cta a, #navbar-wrapper,#primaryMenuWrapper.show { background-color: '. $dark_bg_monochrome . '}';
 
 echo '.super-dark-bg,#topbar,footer#main { background-color: '. $super_dark_bg_monochrome . ';}';
 
-echo '.light-text, #consultation_form button, footer#main p, #footer_copyright, #footer_copyright a, #topbar a,#topbar, #cta,#cta a, footer#main a,footer#main, #newsletter_section h2, #static_hero #typed, #static_hero h1, #static_hero .display-2, #static_hero p.heading,#newsletter_section input[type="submit"], footer#main #footer_newsletter input[type="submit"]{ color: '. $light_text_monochrome . ';}';
+echo '.light-text, #consultation_form button, footer#main p, #footer_copyright, #footer_copyright a, #topbar a,#topbar, #cta,#cta a, footer#main a,footer#main, #newsletter_section h2, #static_hero #typed, #static_hero h1, #static_hero .display-2, #static_hero p.heading,#newsletter_section input[type="submit"], footer#main #footer_newsletter input[type="submit"], nav#primary li a, nav#primary .display-3 a{ color: '. $light_text_monochrome . ';}';
 
 echo '.medium-text, footer#main #footer_contact .display-5, footer#main .display-4 { color: '. $medium_text_monochrome . ';}';
 
-echo '.dark-text,#consultation_form label,#footer_newsletter,.display-1,.display-2,.display-3,.display-4,.display-5,.display-6,h1,h2,h3,h4,h5,p, nav#primary li a, .entry-title a, nav#primary .display-3 a, footer#main #footer_newsletter .display-5{ color: '. $dark_text_monochrome . ' }';
+echo '.dark-text,#consultation_form label,#footer_newsletter,.display-1,.display-2,.display-3,.display-4,.display-5,.display-6,h1,h2,h3,h4,h5,p, .entry-title a, footer#main #footer_newsletter .display-5{ color: '. $dark_text_monochrome . ' }';
 
 echo '.super-dark-text, #consultation .display-4.email, #consultation .display-2.phone, footer#main .display-5, ,#newsletter_form_text_logo a, #newsletter_section , #newsletter_section .display-3 { color: '. $super_dark_text_monochrome . '; }';
 

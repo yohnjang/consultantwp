@@ -32,26 +32,7 @@ input[type="submit"]:hover {cursor: pointer;}
   // Reset hero wrapper padding to 0
   #wrapper-hero { padding: 0px !important; }
 
-  // Adding basic WordPress classes to pass the WordPress.org tests
-  .sticky,
-  .gallery-caption,
-  .bypostauthor {
-    font-size: inherit;
-  }
 
-  // Separate sticky wrapper from main content
-  .wrapper#wrapper-sticky { border-bottom: 1px solid $gray-300; }
-
-  // Adding some contrast background color to footer full widget
-  #wrapper-footer-full,
-  #wrapper-static-hero { background-color: $gray-200; }
-
-  // Necessary WP classes
-  .wp-caption { font-size: inherit; }
-
-  .wp-caption-text { font-size: inherit; }
-
-  .screen-reader-text { @extend .sr-only; }
 
   .alignleft {
     float: left;
@@ -177,88 +158,6 @@ embed,
 iframe,
 object {
 	max-width: 100%;
-}
-
-
-// Buttons 
-.btn-secondary {
-  color: black;
-  background-color: #fff;
-  border-color: #6c757d;
-  font-size:100;
-}
-
-a { 
-  &.button { 
-    &.cta { 
-      padding:.5rem 1rem;
-      border-radius: .25rem;
-      text-decoration: none;
-      transition: color 0.2s linear;
-    }
-  }
-}
-
-// Pagination
-ul.page-numbers,
-ul.pagination {
-  display: flex;
-  padding-left: 0;
-  list-style: none;
-  font-size:.75rem;
-  margin:1rem 0;
-
-  li a,
-  li span {
-    padding: .6rem .9rem;
-    display:block;
-    text-decoration: none; 
-    border-top:1px solid #dee2e6;
-    border-bottom:1px solid #dee2e6;
-    border-right:1px solid #dee2e6;
-
-  }
-
-  li:first-child span.current,
-  li:last-child span.current {
-    padding: .6rem .9rem;
-  }
-
-  li span.current {
-    background-color: #fff;
-    color: #111;
-  }
-
-  li:first-child span.current,
-  li:last-child span.current
-  {
-    border-color:$primary;
-  }
-
-  li:first-child span,
-  li:first-child a {
-    border-left:1px solid #dee2e6;
-    border-bottom-left-radius: .25rem;
-    border-top-left-radius: .25rem;
-  }
-
-  li:last-child span.current,
-  li:last-child a {
-    border-top-right-radius: .25rem;
-    border-bottom-right-radius: .25rem;
-    border-right:1px solid #dee2e6;
-  }
-
-  li:first-child span.current, 
-  li:last-child span.current {
-  border-color: #999;
-  }
-
-  li:last-child span.current { 
-    border-left: 1px solid #999;
-    margin-left:-1px;
-  }
-
 }
 
 // Blog Page Wrapper
@@ -494,11 +393,5 @@ nav#primary
 
 
 }
-
-@media only screen and (min-width: 1200px){
-  
-}
-
-
 
 

@@ -16,19 +16,23 @@ $super_dark_text_yellow = $super_dark_color;
 $light_border_color_yellow = $light_color;
 $dark_border_color_yellow = $dark_color;
 
-echo '.light-bg,#consultation, #navbar-wrapper { background-color: ' . $light_bg_yellow . ';}';
+echo '#testimonials::before, #testimonials_glider::before{ color: ' . $medium_color .';}';
 
-echo '.medium-bg,#cta, footer#main #footer_newsletter input[type="submit"],#newsletter_section input[type="submit"],.cookiebanner{ background: '. $medium_bg_yellow . '; }';
+echo '#static_hero { border-top: 1px solid ' . $light_color .';border-bottom: 1px solid ' . $light_color .';}';
 
-echo '.dark-bg,.btn-secondary:hover,#consultation input[type="submit"],#consultation_form button,#footer_copyright { background-color: '. $dark_bg_yellow . ';}';
+echo '.light-bg,#consultation, body,#primaryMenuWrapper.show,.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{ background-color: ' . $light_bg_yellow . ';}';
+
+echo '.medium-bg,#cta, footer#main #footer_newsletter input[type="submit"],#newsletter_section input[type="submit"]{ background: '. $medium_bg_yellow . '; }';
+
+echo '.dark-bg,.btn-secondary:hover,#consultation input[type="submit"],#consultation_form button,#footer_copyright, #navbar-wrapper,#primaryMenuWrapper.show  { background-color: '. $dark_bg_yellow . ';}';
 
 echo '.super-dark-bg,#topbar,#cta a, #newsletter_section,footer#main { background-color: '. $super_dark_bg_yellow . ';}';
 
-echo '.light-text, #newsletter_section, #consultation_form button, footer#main p, #footer_copyright, #footer_copyright a, #topbar a,#topbar, #cta,#cta a, footer#main a,footer#main, #newsletter_section h2, #static_hero #typed, #static_hero h1, #static_hero .display-2,#newsletter_form_text_logo a, #static_hero p.heading, #newsletter_section .display-3, footer#main #footer_contact .display-5, footer#main .display-4 { color: '. $light_text_yellow . ';}';
+echo '.light-text, #newsletter_section, #consultation_form button, footer#main p, #footer_copyright, #footer_copyright a, #topbar a,#topbar, #cta,#cta a, footer#main a,footer#main, #newsletter_section h2, #static_hero #typed, #static_hero h1, #static_hero .display-2,#newsletter_form_text_logo a, #static_hero p.heading, #newsletter_section .display-3, footer#main #footer_contact .display-5, footer#main .display-4, nav#primary .display-3 a, nav#primary li a { color: '. $light_text_yellow . ';}';
 
 echo '.medium-text { color: '. $medium_text_yellow . ';}';
 
-echo '.dark-text,#consultation_form label,#footer_newsletter,.display-1,.display-2,.display-3,.display-4,.display-5,.display-6,h1,h2,h3,h4,h5,p, nav#primary li a, .entry-title a, nav#primary .display-3 a,#newsletter_section input[type="submit"], footer#main #footer_newsletter input[type="submit"]{ color: '. $dark_text_yellow . ' }';
+echo '.dark-text,#consultation_form label,#footer_newsletter,.display-1,.display-2,.display-3,.display-4,.display-5,.display-6,h1,h2,h3,h4,h5,p, .entry-title a,#newsletter_section input[type="submit"], footer#main #footer_newsletter input[type="submit"]{ color: '. $dark_text_yellow . ' }';
 
 echo '.super-dark-text, #consultation .display-4.email, #consultation .display-2.phone, footer#main .display-5 { color: '. $super_dark_text_yellow . '; }';
 

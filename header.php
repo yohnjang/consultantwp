@@ -29,7 +29,6 @@ $container   = get_theme_mod( 'sparkle_container_type' );
 <body <?php body_class(); ?>>
 
 <div class="site" id="page">
-
 	<div id="navbar-wrapper" itemscope itemtype="http://schema.org/WebSite">
 	<?php get_template_part( 'custom/topbar' ); ?>
 

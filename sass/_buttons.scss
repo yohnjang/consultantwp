@@ -1,0 +1,56 @@
+
+
+a { 
+  &.button { 
+    &.cta { 
+      padding:.5rem 1rem;
+      border-radius: .25rem;
+      text-decoration: none;
+      transition: color 0.2s linear;
+    }
+  }
+}
+
+
+// Pagination
+ul.page-numbers,
+ul.pagination {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  font-size:.75rem;
+  margin:1rem 0;
+
+  li a,
+  li span {
+    padding: .6rem .9rem;
+    display:block;
+    text-decoration: none; 
+
+  }
+
+  li:first-child span.current,
+  li:last-child span.current {
+    padding: .6rem .9rem;
+  }
+
+  li:first-child span,
+  li:first-child a {
+    border-bottom-left-radius: .25rem;
+    border-top-left-radius: .25rem;
+  }
+
+  li:last-child span.current,
+  li:last-child a {
+    border-top-right-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+  }
+
+  li:first-child span.current, 
+  li:last-child span.current {
+  }
+
+  li:last-child span.current { 
+    margin-left:-1px;
+  }
+}

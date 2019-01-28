@@ -9,7 +9,7 @@
 
 	if( (get_theme_mod('sparkle_quote_graphic_switch') == null) || (get_theme_mod('sparkle_quote_graphic_switch') == 1) ){
 		echo '#testimonials::before, #testimonials_glider::before { 
-		opacity: 0.5;
+		opacity: 0.1;
 		}';
 	}
 

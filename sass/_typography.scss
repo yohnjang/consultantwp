@@ -25,6 +25,10 @@ a:hover{text-decoration: none; }
 
 p { font-size: 1.2rem;}
 
+// Buttons 
+.btn-secondary {
+  font-size:100;
+}
 
 .highlight { 
   color: $highlight;
@@ -40,6 +44,22 @@ p { font-size: 1.2rem;}
   font-family: flont;
   font-style: normal;
 }
+
+  // Adding basic WordPress classes to pass the WordPress.org tests
+  .sticky,
+  .gallery-caption,
+  .bypostauthor {
+    font-size: inherit;
+  }
+
+
+
+  // Necessary WP classes
+  .wp-caption { font-size: inherit; }
+
+  .wp-caption-text { font-size: inherit; }
+
+  .screen-reader-text { @extend .sr-only; }
 
 
 @media only screen and (min-width:768px){
