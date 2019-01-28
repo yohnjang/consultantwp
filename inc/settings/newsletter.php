@@ -85,7 +85,7 @@
 					'description' => __( ' Newsletter code goes here '),
 					'section' => 'sparkle_newsletter_section',
 					'settings' => 'sparkle_newsletter_code',
-					'type' => 'textarea',
+					'type' => 'text',
 					'priority' => '20',
 				)
 			)

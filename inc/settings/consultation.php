@@ -41,7 +41,7 @@
 					'description' => __( ' Consultation Form code goes here '),
 					'section' => 'sparkle_consultation_form_section',
 					'settings' => 'sparkle_consultation_form_code',
-					'type' => 'textarea',
+					'type' => 'text',
 					'priority' => '10',
 				)
 			)

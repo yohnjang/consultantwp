@@ -20,33 +20,27 @@ else{
       echo '<div class="contact_information">';
 
 				if( get_theme_mod('sparkle_address') != null || get_theme_mod('sparkle_city_state') != null || get_theme_mod('sparkle_zip_code') != null){
-          echo '<div class="display-5">
-                  <i class="flont-location"></i>
-                  <span>Address:</span>
-                </div>
-                <p class="address">';
+          echo '<span class="address"><i class="flont-location"></i>';
                   echo get_theme_mod('sparkle_address');
-                echo '</p><!-- address -->';
-                echo '<p class="city_state">';
+                echo '</span><br/><!-- address -->';
+                echo '<span class="city_state">';
                 echo get_theme_mod('sparkle_city_state');
-                echo '</p><!-- city_state -->';
-                echo '<p class="zip_code">';
+                echo '</span><!-- city_state -->';
+                echo '<span class="zip_code">';
                 echo get_theme_mod('sparkle_zip_code'); 
-                echo '</p><!-- zip_code -->';
+                echo '</span><!-- zip_code -->';
         }
 
 			if( get_theme_mod('sparkle_phone_number') != null ){
-				echo '<div class="display-5"><i class="flont-phone"></i><span class="ml-1">Call:</span></div>
-				<p>';
+				echo '<br/><div class="mt-3"><i class="flont-phone mr-1"></i>';
 				echo get_theme_mod('sparkle_phone_number');
-				echo '</p>';
+				echo '</div>';
 			}
 
       if( get_theme_mod('sparkle_email') != null){
-        echo '<div class="display-5"><i class="flont-mail"></i><span class="ml-1">Email:</span></div>
-      <p>';
+        echo '<div class="mt-3"><i class="flont-mail mr-1"></i>';
       echo get_theme_mod('sparkle_email');
-      echo '</p>';
+      echo '</div>';
       }
 
 /*********************************************************************************************************** */

@@ -8,8 +8,8 @@
   }
   echo '<strong>*indicates required</strong>';
   if( get_theme_mod('sparkle_newsletter_code') != null){
-    echo get_theme_mod('sparkle_newsletter_code'); 
-    }
+      echo do_shortcode(get_theme_mod('sparkle_newsletter_code')); 
+  }
   else {
     echo '<div class="highlight">please enter your newsletter code first</div>';
   }

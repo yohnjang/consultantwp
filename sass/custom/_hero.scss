@@ -5,7 +5,7 @@
   align-content: center;
   align-items: center;
   background-position:80%;
-  height:80vh;
+  height:50vh;
   background-repeat: no-repeat;
 
  .display-2{ 
@@ -30,8 +30,6 @@
     }
   }
 
-
-
   &:before {
     content: '';
     position: absolute;
@@ -49,6 +47,7 @@
 
 
   #static_hero {
+    height:60vh;
     h1.display-2 { 
       font-size:4rem;
     }
@@ -72,6 +71,22 @@
     }
   }
 
+}
+
+@media only screen and (min-width:992px){
+  #static_hero { height:70vh;
+
+    .content { width: 700px;
+    
+      .text { 
+        padding:6rem;
+      }
+    }
+
+    &:before {
+    opacity: 1;
+    }
+  }
 }
 
 @media only screen and (min-width:1024px){

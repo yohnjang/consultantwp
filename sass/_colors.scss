@@ -5,22 +5,6 @@
   #wrapper-footer-full,
   #wrapper-static-hero { background-color: $gray-200; }
 
-
-  // Buttons 
-.btn-secondary {
-  color: black;
-  background-color: #fff;
-  border-color: #6c757d;
-}
-
-.hamburger.is-active .hamburger-inner,
-.hamburger.is-active .hamburger-inner::before,
-.hamburger.is-active .hamburger-inner::after {
-  // background-color: #1d274e;
-
-}
-
-
   // Pagination
 ul.page-numbers,
 ul.pagination {

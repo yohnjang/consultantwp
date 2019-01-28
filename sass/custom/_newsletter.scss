@@ -97,17 +97,30 @@
   
 }
 
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 992px){
+  #newsletter_section { 
 
+    form{
+      width:80%;
+      margin: 0 auto;
 
-    #newsletter_section { 
       input[type="text"],
       input[type="email"]{
-        width:300px;
+        width:100%;
       }
       input[type="submit"]{ 
         width:200px;
         margin-left:144px;
       }
     }
+  }
+}
+
+@media only screen and (min-width: 1200px){
+  #newsletter_section { 
+    form{
+      width: 70%;
+    }
+  }
+
 }
