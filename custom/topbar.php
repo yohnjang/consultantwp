@@ -9,8 +9,19 @@
 			if(get_theme_mod('sparkle_address') != null){
 				echo '<span class="address d-none d-md-inline-block"><i class="flont-location"></i>';
 				echo get_theme_mod('sparkle_address');
+
+				if(get_theme_mod('sparkle_city_state') != null){
+					echo '&nbsp;,&nbsp;';
+					echo get_theme_mod('sparkle_city_state');
+				}
+	
+				if(get_theme_mod('sparkle_zip_code') != null){
+					echo '&nbsp;';
+					echo get_theme_mod('sparkle_zip_code');
+				}
 				echo '</span>';
 			}
+
 		  echo '</div><div class="social">';
 			if(get_theme_mod('sparkle_facebook') != null){
 				echo '<a href="';

@@ -26,7 +26,7 @@ else{
                 echo '<span class="city_state">';
                 echo get_theme_mod('sparkle_city_state');
                 echo '</span><!-- city_state -->';
-                echo '<span class="zip_code">';
+                echo '<span class="zip_code">&nbsp;';
                 echo get_theme_mod('sparkle_zip_code'); 
                 echo '</span><!-- zip_code -->';
         }

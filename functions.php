@@ -33,13 +33,57 @@ foreach ( $sparkle_includes as $file ) {
 	require_once $filepath;
 }
 
-// custom function to update the read more button on article excerpt
+require_once dirname( __FILE__ ) . '/class-tgm-plugin-activation.php';
 
-/*
-function sparkle_all_excerpts_get_more_link( $post_excerpt ) {
+add_action( 'tgmpa_register', 'sparkle_register_required_plugins' );
 
-	return $post_excerpt . '<a class="sparkle-read-more-link" href="#">read more</a>';
+/**
+ * Register the required plugins for this theme.
+ *
+ * In this example, we register five plugins:
+ * - one included with the TGMPA library
+ * - two from an external source, one from an arbitrary source, one from a GitHub repository
+ * - two from the .org repo, where one demonstrates the use of the `is_callable` argument
+ *
+ * The variables passed to the `tgmpa()` function should be:
+ * - an array of plugin arrays;
+ * - optionally a configuration array.
+ * If you are not changing anything in the configuration array, you can remove the array and remove the
+ * variable from the function call: `tgmpa( $plugins );`.
+ * In that case, the TGMPA default settings will be used.
+ *
+ * This function is hooked into `tgmpa_register`, which is fired on the WP `init` action on priority 10.
+ */
+function sparkle_register_required_plugins() {
+	/*
+	 * Array of plugin arrays. Required keys are name and slug.
+	 * If the source is NOT from the .org repo, then source is also required.
+	 */
+	$plugins = array(
+		array(
+			'name'      => 'Easy Mailchimp Forms by Yikes',
+			'slug'      => 'yikes-inc-easy-mailchimp-extender',
+			'required'  => false,
+		),
+		array(
+			'name'      => 'Contact Forms by WPForms',
+			'slug'      => 'wpforms-lite',
+			'required'  => false,
+		),
+	);
+
+	$config = array(
+		'id'           => 'small-business',   
+		'default_path' => '',                      
+		'menu'         => 'tgmpa-install-plugins', 
+		'parent_slug'  => 'themes.php',            
+		'capability'   => 'edit_theme_options',    
+		'has_notices'  => true,                    
+		'dismissable'  => true,                   
+		'dismiss_msg'  => '',                     
+		'is_automatic' => false,                
+		'message'      => '',                      
+	);
+
+	tgmpa( $plugins, $config );
 }
-add_filter( 'wp_trim_excerpt', 'sparkle_all_excerpts_get_more_link' );
-
-*/

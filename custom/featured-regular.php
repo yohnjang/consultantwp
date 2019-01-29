@@ -7,7 +7,7 @@ echo '<div id="featured">
 				if( get_theme_mod('sparkle_featured_headline_main') != null ){
 					echo get_theme_mod('sparkle_featured_headline_main');
 				}
-				else { echo 'Do Any Of These Sound Familiar?';} 
+				else { echo 'Do Any Of These Problems Sound Familiar?';} 
 			echo '</div><!-- display-2 -->
 			<p class="headline">';
 				if( get_theme_mod('sparkle_featured_excerpt_main') != null ){

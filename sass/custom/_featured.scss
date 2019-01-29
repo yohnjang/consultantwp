@@ -43,7 +43,7 @@
 
   .main_headline { 
     text-align: center;
-    max-width:640px;
+    max-width:800px;
     margin: 0 auto;
     padding: 1rem;
   }
@@ -53,9 +53,15 @@
 
 
 @media only screen and (min-width:768px){
+
+  #featured_glider { 
+    .main_headline { 
+      max-width:640px;
+    }
+  }
 }
 
-@media only screen and (min-width:1024px){
+@media only screen and (min-width:992px){
 
   #featured { 
     min-height: 100vh;
@@ -67,5 +73,18 @@
 
  #featured_glider { 
    padding:5rem 0;
+   .main_headline { 
+    max-width:768px;
+  }
  }
+}
+
+@media only screen and (min-width:1200px){
+
+  #featured_glider { 
+    .main_headline { 
+     max-width:840px;
+   }
+  }
+
 }

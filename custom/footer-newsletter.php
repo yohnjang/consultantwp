@@ -1,11 +1,23 @@
 <?php 
   echo '<div id="footer_newsletter">';
   if(get_theme_mod('sparkle_newsletter_headline') != null){
-    echo '<div class="display-5">' . get_theme_mod('sparkle_newsletter_headline') . '</div>';
+    echo '<div class="display-5 heavy">' . get_theme_mod('sparkle_newsletter_headline') . '</div>';
   }
   else {
-    echo '<div class="display-5">Never miss a thing. Sign up for our newsletter.</div>';
+    echo '<div class="display-5 heavy">Subscribe</div>';
   }
+
+  if(get_theme_mod('sparkle_newsletter_excerpt') != null){
+    echo '<p>' . get_theme_mod('sparkle_newsletter_excerpt') . '</p>';
+  }
+  else {
+    echo '<p>And get our monthly newsletter, featuring articles designed to optimize the success of your business.</p>';
+  }
+
+
+
+
+
   echo '<strong>*indicates required</strong>';
   if( get_theme_mod('sparkle_newsletter_code') != null){
       echo do_shortcode(get_theme_mod('sparkle_newsletter_code')); 

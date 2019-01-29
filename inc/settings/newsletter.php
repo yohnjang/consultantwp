@@ -71,6 +71,24 @@
 			)
 		);
 
+		$wp_customize->add_setting('sparkle_newsletter_excerpt', array(
+			'type' => 'theme_mod',
+			'capability' => 'edit_theme_options',
+		));
+
+		$wp_customize->add_control(
+			new WP_Customize_Control(
+				$wp_customize,
+				'sparkle_newsletter_excerpt', array(
+					'label' => __( 'Newsletter Excerpt', 'sparkle'),
+					'section' => 'sparkle_newsletter_section',
+					'settings' => 'sparkle_newsletter_excerpt',
+					'type' => 'text',
+					'priority' => '15',
+				)
+			)
+		);
+
 
 		$wp_customize->add_setting('sparkle_newsletter_code', array(
 			'type' => 'theme_mod',
