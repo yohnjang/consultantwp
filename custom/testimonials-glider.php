@@ -48,16 +48,16 @@ echo '<div id="testimonials_glider_wrapper">
 					echo '</div>';
 				}
 				else{
-					echo '<div class="testimonials_headline display-3">Your Client</div>';
+					echo '<div class="testimonials_headline display-3"><i>Your Name</i> helped us achieve <i>primary benefit</i>.</div>';
 				}
 
 				if(get_theme_mod('sparkle_testimonials_excerpt_1') != null){
-					echo '<p class="testimonials_excerpt">"';
+					echo '<p class="testimonials_excerpt">“';
 					echo get_theme_mod('sparkle_testimonials_excerpt_1');
-					echo '"</p>';
+					echo '”</p>';
 				}
 				else{
-					echo '<p class="testimonials_excerpt">"Fantastic customer service, will definitely recommend to friends and family!"</p>';
+					echo '<p class="testimonials_excerpt">“Insert a testimonial from your previous client here. For best results, it should address some type of hesitation they had before hiring a consultant like you — and then how you improved their condition as a result of your engagement. The more it speaks to the primary benefit you help your clients achieve (and the primary benefit they want as a result of your expertise), the more powerful it will be.”</p>';
 				}
 			
 		echo '</li><!-- testimonials #1 -->';
@@ -82,9 +82,9 @@ echo '<div id="testimonials_glider_wrapper">
 		echo get_theme_mod('sparkle_testimonials_headline_2');
 		echo '</div>';
 	
-		echo '<p class="testimonials_excerpt">"';
+		echo '<p class="testimonials_excerpt">“';
 		echo get_theme_mod('sparkle_testimonials_excerpt_2');
-		echo '"</p>';
+		echo '”</p>';
 		
 		echo '</li><!-- testimonials #2 -->';
 	}
@@ -110,9 +110,9 @@ echo '<div id="testimonials_glider_wrapper">
 		echo get_theme_mod('sparkle_testimonials_headline_3');
 		echo '</div>';
 	
-		echo '<p class="testimonials_excerpt">"';
+		echo '<p class="testimonials_excerpt">“';
 		echo get_theme_mod('sparkle_testimonials_excerpt_3');
-		echo '"</p>';
+		echo '”</p>';
 		
 		echo '</li><!-- testimonials #3 -->';
 	}
@@ -137,9 +137,9 @@ if( get_theme_mod('sparkle_testimonials_headline_4') != null && get_theme_mod('s
 	echo get_theme_mod('sparkle_testimonials_headline_4');
 	echo '</div>';
 
-	echo '<p class="testimonials_excerpt">"';
+	echo '<p class="testimonials_excerpt">“';
 	echo get_theme_mod('sparkle_testimonials_excerpt_4');
-	echo '"</p>';
+	echo '”</p>';
 	
 	echo '</li><!-- testimonials #4 -->';
 }
@@ -165,9 +165,9 @@ if( get_theme_mod('sparkle_testimonials_headline_5') != null && get_theme_mod('s
 	echo get_theme_mod('sparkle_testimonials_headline_5');
 	echo '</div>';
 
-	echo '<p class="testimonials_excerpt">"';
+	echo '<p class="testimonials_excerpt">“';
 	echo get_theme_mod('sparkle_testimonials_excerpt_5');
-	echo '"</p>';
+	echo '”</p>';
 	
 	echo '</li><!-- testimonials #5 -->';
 }
@@ -193,9 +193,9 @@ if( get_theme_mod('sparkle_testimonials_headline_6') != null && get_theme_mod('s
 	echo get_theme_mod('sparkle_testimonials_headline_6');
 	echo '</div>';
 
-	echo '<p class="testimonials_excerpt">"';
+	echo '<p class="testimonials_excerpt">“';
 	echo get_theme_mod('sparkle_testimonials_excerpt_6');
-	echo '"</p>';
+	echo '”</p>';
 	
 	echo '</li><!-- testimonials #6 -->';
 }

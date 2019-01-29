@@ -20,12 +20,15 @@
        .featured_anchor_button {
          margin:1rem 1rem;
        }
-       .featured_headline,
        .featured_anchor_button { 
          text-align:center;
        }
        .featured_excerpt {
          text-align:justify;
+       }
+       a.btn { 
+         display:block;
+         margin:1rem;
        }
    }
 }

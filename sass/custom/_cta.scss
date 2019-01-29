@@ -17,25 +17,12 @@
   #cta { 
     
     .container { 
-      display:flex;
-    align-content: center;
-    align-items:center;
-    justify-content: center;
-    flex-flow:row;
-    a { display:inline-block;width:340px;margin-top:0;}
-    }
-
-  }
-}
-
-@media only screen and (min-width:1024px){
-
-  #cta { 
-    .container {
-      display: flex;
-      align-content: center;
-      justify-content: space-between;
-      align-items: center;
+      @include flex(center,center,row);
+      a { 
+        display:inline-block;
+        width:420px;
+        margin-top:0;
+      }
     }
 
   }

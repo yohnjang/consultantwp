@@ -9,6 +9,7 @@ var minify = require('gulp-minify');
 var browserSync = require('browser-sync'); 
 var concat = require('gulp-concat');
 var terser = require ('gulp-terser');
+const javascriptObfuscator = require('gulp-javascript-obfuscator');
 
 // configure the paths
 var watch_dir = './sass/**/*.scss';
@@ -22,6 +23,7 @@ var paths = {
 gulp.task('compress', function() {
   gulp.src(['js/*.js', 'js/*.mjs'])
   .pipe(concat('theme.js'))
+  .pipe(javascriptObfuscator())
   .pipe(terser())
   .pipe(gulp.dest('./src'))
 });

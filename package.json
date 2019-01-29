@@ -58,6 +58,7 @@
     "undescores-for-npm": "^1.0.0"
   },
   "devDependencies": {
+    "gulp-javascript-obfuscator": "^1.1.5",
     "gulp-terser": "^1.1.7"
   }
 }

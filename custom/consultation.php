@@ -24,17 +24,26 @@
 				echo get_theme_mod('sparkle_consultation_headline');
 				echo '</div><!-- headline -->';
 			}
-			else{ echo '<div class="display-2">Get your free consultation by contacting us today.</div>';}
+			else{ echo '<div class="display-2 heavy dark-text">Are you in the <i>primary audience</i> industry and looking to achieve <i>primary benefit</i>?</div>';}
 
 
-			if(get_theme_mod('sparkle_phone_number') != null){
+			if(get_theme_mod('sparkle_consultation_excerpt') != null){
 				echo '<div class="display-2 phone d-none d-md-block"><i class="flaticon-phone"></i>';
-				echo get_theme_mod('sparkle_phone_number');
+				echo get_theme_mod('sparkle_consultation_excerpt');
 				echo '</div>';
 			}
 			else{
-			}
+echo '<p>
+				After your free consultation, you will…
+				<ul>
+    <li><i>Benefit of what they will learn from a consultation from you #1</i></li>
+    <li><i>Benefit of what they will learn from a consultation from you #2</i></li>
+		<li><i>Benefit of what they will learn from a consultation from you #3</i></li>
+		</ul></p>';
 
+
+			}
+/*
 			if(get_theme_mod('sparkle_email') != null){
 				echo '<div class="display-4 email d-none d-md-block"><i class="flaticon-at"></i>';
 				echo get_theme_mod('sparkle_email');
@@ -42,7 +51,7 @@
 			}
 			else{
 			}
-
+*/
 			if ( has_custom_logo() && get_theme_mod('sparkle_consultation_logo_switch') == 1 ) { 
 				echo '<div class="logo bottom d-none d-md-block">';
 					the_custom_logo();

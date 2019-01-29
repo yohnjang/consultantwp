@@ -10,6 +10,12 @@
       filter: grayscale(0%);
     }
   }
+
+  #featured { 
+    .col-12.col-lg-4 .featured_image:hover { 
+      filter: grayscale(0%);
+    }
+  }
     
   #featured, #news, #featured_glider, #news_glider {  
     ul li:hover .featured_image { 

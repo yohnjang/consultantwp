@@ -25,7 +25,7 @@
                         }
                         else {
                             echo '<h1 class="display-2">';
-                            echo 'Your Benefit Driven Headline Or Promise Goes Here';
+                            echo 'I help <i>primary audience</i> achieve <i>primary benefit</i> by <i>doing this</i> better than anyone';
                             echo '</h1>';
                         }
                     }
@@ -56,7 +56,7 @@
 <?php if(get_theme_mod('sparkle_hero_headline') == null ){ ?>
     <script>
     var optionss = {
-        strings: ["Your Benefit Driven Headline Or Promise Goes Here"],
+        strings: ["I help <i>primary audience</i> achieve <i>primary benefit</i> by <i>doing this</i> better than anyone"],
         typeSpeed: 70,
         showCursor: false
     }

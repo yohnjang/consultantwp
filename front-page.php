@@ -49,6 +49,6 @@ get_header();
  if( get_theme_mod('sparkle_custom_content_switch') == 6 ){
 	get_template_part( 'custom/custom-content' ); 
 	}
-
+	
  get_footer(); 
 

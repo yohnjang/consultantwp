@@ -11,7 +11,7 @@
 				echo get_theme_mod('sparkle_address');
 
 				if(get_theme_mod('sparkle_city_state') != null){
-					echo '&nbsp;,&nbsp;';
+					echo ',&nbsp;';
 					echo get_theme_mod('sparkle_city_state');
 				}
 	
