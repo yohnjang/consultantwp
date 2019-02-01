@@ -19,7 +19,7 @@ if ( ! function_exists( 'sparkle_scripts' ) ) {
 		//$theme_version = $the_theme->get( 'Version' );
 		
 		//$css_version = $theme_version . '.' . filemtime(get_template_directory() . '/src/theme.css');
-		wp_enqueue_style( 'sparkle-styles', get_stylesheet_directory_uri() . '/src/theme.css', array(), $css_version );
+		wp_enqueue_style( 'sparkle-styles', get_stylesheet_directory_uri() . '/src/theme.min.css', array(), $css_version );
 		
 		//$js_version = $theme_version . '.' . filemtime(get_template_directory() . '/src/theme-min.js');
 		//wp_enqueue_script( 'sparkle-scripts', get_template_directory_uri() . '/src/theme-min.js', array(), $js_version, true );

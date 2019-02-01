@@ -47,7 +47,7 @@ echo '<div id="featured">
 					echo '</p>';
 				}
 				else{
-					echo '<p class="featured_excerpt">Before your prospective client spends 10-15 minutes of their time reading through your article, explain to them how you intend to help them through this article.</p><a class="btn btn-secondary sparkle-read-more-link light-text" href="https://www.consultantwp.com/consultancy-templates/benefit-page">Learn More</a>';
+					echo '<p class="featured_excerpt">Before your prospective client spends 10-15 minutes of their time reading through your article, explain to them how you intend to help them through this article.</p><a class="btn btn-secondary sparkle-read-more-link light-text" href="https://www.consultancyaccelerator.com/consultancy-templates/benefit-page">Learn More</a>';
 				}
 				
 				if(get_theme_mod('sparkle_featured_url_1') != null) { 
@@ -87,7 +87,7 @@ echo '<div id="featured">
 					echo '</p>';
 				}
 				else{
-					echo '<p class="featured_excerpt">Before your prospective client spends 10-15 minutes of their time reading through your article, explain to them how you intend to help them through this article.</p><a class="btn btn-secondary sparkle-read-more-link light-text" href="https://www.consultantwp.com/consultancy-templates/benefit-page">Learn More</a>';
+					echo '<p class="featured_excerpt">Before your prospective client spends 10-15 minutes of their time reading through your article, explain to them how you intend to help them through this article.</p><a class="btn btn-secondary sparkle-read-more-link light-text" href="https://www.consultancyaccelerator.com/consultancy-templates/benefit-page">Learn More</a>';
 				}
 				
 				if(get_theme_mod('sparkle_featured_url_2') != null) { 
@@ -125,7 +125,7 @@ if(get_theme_mod('sparkle_featured_excerpt_3') != null){
 	echo '</p>';
 }
 else{
-	echo '<p class="featured_excerpt">Before your prospective client spends 10-15 minutes of their time reading through your article, explain to them how you intend to help them through this article.</p><a class="btn btn-secondary sparkle-read-more-link light-text" href="https://www.consultantwp.com/consultancy-templates/benefit-page">Learn More</a>';
+	echo '<p class="featured_excerpt">Before your prospective client spends 10-15 minutes of their time reading through your article, explain to them how you intend to help them through this article.</p><a class="btn btn-secondary sparkle-read-more-link light-text" href="https://www.consultancyaccelerator.com/consultancy-templates/benefit-page">Learn More</a>';
 }
 
 if(get_theme_mod('sparkle_featured_url_3') != null) { 

@@ -1,0 +1,1 @@
+var testimonials=new Glide(".testimonial-glide",{type:"carousel",perView:1,startAt:0,autoplay:4e3});testimonials.mount();

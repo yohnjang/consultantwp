@@ -15,7 +15,7 @@ echo '<div id="cta">
 			echo get_theme_mod('sparkle_cta_url');
 		}
 		else { 
-			echo '#';
+			echo get_site_url().'/consultation';
 		}
 		echo '" class="cta button">';
 		if(get_theme_mod('sparkle_cta_button_text') != null){

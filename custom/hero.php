@@ -1,4 +1,5 @@
 <?php 
+
     if(get_theme_mod('sparkle_hero_image') != null ){
         echo '<div id="static_hero" style="background-image:url(';
         echo get_theme_mod('sparkle_hero_image');
@@ -25,17 +26,9 @@
                         }
                         else {
                             echo '<h1 class="display-2">';
-                            echo 'I help <i>primary audience</i> achieve <i>primary benefit</i> by <i>doing this</i> better than anyone';
+                            echo 'I help <i>primary audience</i> achieve <i>primary benefit</i> by <i>doing this</i> better than any of my competitors.';
                             echo '</h1>';
                         }
-                    }
-                    if(get_theme_mod('sparkle_hero_excerpt') != null ){
-                        echo '<p class="heading hero_excerpt">';
-                        echo get_theme_mod('sparkle_hero_excerpt');
-                        echo '</p>';
-                    }
-                    else{
-
                     }
     echo '</div><!-- text -->
             </div><!-- content -->
@@ -56,7 +49,7 @@
 <?php if(get_theme_mod('sparkle_hero_headline') == null ){ ?>
     <script>
     var optionss = {
-        strings: ["I help <i>primary audience</i> achieve <i>primary benefit</i> by <i>doing this</i> better than anyone"],
+        strings: ["I help <i>primary audience</i> achieve <i>primary benefit</i> by <i>doing this</i> better than any of my competitors."],
         typeSpeed: 70,
         showCursor: false
     }
